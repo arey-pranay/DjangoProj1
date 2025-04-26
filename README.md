@@ -74,4 +74,35 @@ add path('chai/',include('chai.urls')) in the urlpatterns array then go to urls.
 
 ### Layout for re-usable, and for variable-based pages. Use block. Create a layout.html, inside templates, but outside website folder.
 
+```
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'styles.css' %}" />
+    <title>{% block title %} Default value {% endblock %}</title>
+  </head>
+
+  <body>
+    <nav>This is our navbar</nav>
+    {% block content %} {% endblock %}
+  </body>
+</html>
+```
+
+Then update the index.html
+
+```
+{% extends "layout.html" %} {% block %}Home Page{% endblock %} {% block %}
+<h1>Chai aur Code</h1>
+{% endblock %}
+```
+
+then paste the same in the all_chai.html
+put the same in the 'all_chai.html'
+the layout.html extends will work because, we have set 'templates' as the place to search for things. in the settings.py, so if the current app templates folder does not have a layout.html, then it will search in the project's template file or the higher level templates folder for getting a layout.html file.
+
+
 
