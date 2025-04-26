@@ -1,5 +1,7 @@
 ### [tutorial](https://www.youtube.com/playlist?list=PLu71SKxNbfoDOf-6vAcKmazT92uLnWAgy)
 
+### [Tutorial based Documenton](https://docs.chaicode.com/youtube/chai-aur-django/welcome)
+
 ### [UV documentation](https://docs.astral.sh/uv/pip/environments/)
 ### [Django documentation](https://docs.djangoproject.com/en/5.2/)
 ### [Jinja documentation](https://jinja.palletsprojects.com/en/stable/)
