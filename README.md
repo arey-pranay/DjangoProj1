@@ -43,6 +43,14 @@ Leftmost is User->Browser->Django and Rightmost is Model.py->DB
 
 ![image](https://github.com/user-attachments/assets/2d893f2e-b203-485a-9cbc-488e21f72bdf)
 
+### Create a templates folder in the Directory, same level as the project , add a website folder in it, and then add you index.html there
+### Add this templates route in your settings.py (TEMPLATES.DIRS array) 'templates'
 
+### Create a static folder in the Directory, same level as the project , add your styles.css in the.
+### in the index.html, put the <link rel="stylesheet" href="{% static 'styles.css' %}" . Add {% load static %} . This enables us as templating engine.
+### Then finally go to settings.py, import os, after the STATIC_URL, add STATICFILES_DIRS = [os.path.join(BASE_DIR,'static')]
 
+---
+
+## Jinja (Lecture 4)
 
